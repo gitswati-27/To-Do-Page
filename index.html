@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>TO-DO APP</h1>
-    <input placeholder="Enter your task">
-    <button><i class="fa-solid fa-plus"></i></button>
-    <ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tasks to-do - stay productive, anytime. </title>
+        <link rel="icon" href="icon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <div class="container">
+        <h1>TASKS TO-DO</h1>
         
-    </ul>
+        <div class="input-area">
+        <input placeholder="Enter your task">
+        <button><i class="fa-solid fa-plus"></i></button>
+        </div>
+
+        <div class="controls">
+        <button id="clear-all">Clear All</button>
+        <button id="filter-pending">Pending</button>
+        <button id="filter-completed">Completed</button>
+        <button id="show-all">All</button>
+        </div>
+
+        <ul></ul>
+
+        <div class="footer">
+        <p id="task-count">0 tasks total</p>
+        </div>
+    </div>
+
     <script src="app.js"></script>
-</body>
+    </body>
+
 </html>
